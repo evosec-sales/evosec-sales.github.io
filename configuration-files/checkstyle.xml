@@ -83,7 +83,7 @@
     </module>
     <module name="SuppressionFilter">
         <property name="file"
-            value="http://jenkins.herbrand.rz.evosec.de/extrafiles/checkstyle-suppressions.xml" />
+            value="https://evosec-sales.github.io/configuration-files/checkstyle-suppressions.xml" />
     </module>
     <module name="LineLength">
         <property name="max" value="150" />
