@@ -1,0 +1,91 @@
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+<module name="Checker">
+    <property name="severity" value="warning" />
+    <module name="TreeWalker">
+        <module name="ConstantName" />
+        <module name="LocalVariableName" />
+        <module name="MemberName" />
+        <module name="MethodName" />
+        <module name="PackageName" />
+        <module name="ParameterName" />
+        <module name="StaticVariableName" />
+        <module name="TypeName" />
+        <module name="AvoidStarImport">
+            <property name="allowStaticMemberImports" value="true" />
+        </module>
+        <module name="IllegalImport" />
+        <module name="RedundantImport" />
+        <module name="UnusedImports">
+            <property name="processJavadoc" value="true" />
+        </module>
+        <module name="MethodLength" />
+        <module name="ParameterNumber">
+            <property name="max" value="8" />
+        </module>
+        <module name="EmptyForIteratorPad" />
+        <module name="MethodParamPad" />
+        <module name="NoWhitespaceAfter" />
+        <module name="NoWhitespaceBefore" />
+        <module name="OperatorWrap" />
+        <module name="ParenPad" />
+        <module name="TypecastParenPad" />
+        <module name="WhitespaceAfter" />
+        <module name="WhitespaceAround">
+            <property name="tokens"
+                value="ASSIGN,BAND,BAND_ASSIGN,BOR,BOR_ASSIGN,BSR,BSR_ASSIGN,BXOR,BXOR_ASSIGN,COLON,DIV,DIV_ASSIGN,EQUAL,GE,GT,LAND,LCURLY,LE,LITERAL_ASSERT,LITERAL_CATCH,LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,LITERAL_RETURN,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE,LOR,LT,MINUS,MINUS_ASSIGN,MOD,MOD_ASSIGN,NOT_EQUAL,PLUS,PLUS_ASSIGN,QUESTION,SL,SLIST,SL_ASSIGN,SR,SR_ASSIGN,STAR,STAR_ASSIGN,LITERAL_ASSERT,TYPE_EXTENSION_AND" />
+        </module>
+        <module name="ModifierOrder" />
+        <module name="RedundantModifier" />
+        <module name="AvoidNestedBlocks" />
+        <module name="EmptyBlock" />
+        <module name="LeftCurly" />
+        <module name="NeedBraces" />
+        <module name="RightCurly" />
+        <module name="EmptyStatement" />
+        <module name="EqualsHashCode" />
+        <module name="IllegalInstantiation" />
+        <module name="InnerAssignment" />
+        <module name="MissingSwitchDefault" />
+        <module name="SimplifyBooleanExpression" />
+        <module name="SimplifyBooleanReturn" />
+        <module name="FinalClass" />
+        <module name="HideUtilityClassConstructor" />
+        <module name="InterfaceIsType" />
+        <module name="VisibilityModifier">
+            <property name="packageAllowed" value="true" />
+            <property name="protectedAllowed" value="true" />
+        </module>
+        <module name="ArrayTypeStyle" />
+        <module name="TodoComment" />
+        <module name="UpperEll" />
+        <module name="GenericWhitespace" />
+        <module name="MissingOverride" />
+        <module name="MissingDeprecated" />
+        <module name="SuppressionCommentFilter" />
+    </module>
+    <module name="NewlineAtEndOfFile">
+        <property name="fileExtensions" value="java,xml,css,less,properties" />
+    </module>
+    <module name="Translation" />
+    <module name="FileLength" />
+    <module name="RegexpSingleline">
+        <property name="id" value="trailingSpacesCheck" />
+        <property name="format" value="(?&lt;!\*)\s+$|\*\s\s+$" />
+        <property name="message" value="Line has trailing spaces." />
+    </module>
+    <module name="RegexpSingleline">
+        <property name="format" value="System\.(out)|(err)\.print(ln)?\(" />
+        <property name="message" value="Use a proper Logger." />
+    </module>
+    <module name="RegexpSingleline">
+        <property name="format" value="Logger (logger)|(LOGGER)" />
+        <property name="message" value="Always use private static final Logger LOG." />
+    </module>
+    <module name="SuppressionFilter">
+        <property name="file"
+            value="http://jenkins.herbrand.rz.evosec.de/extrafiles/checkstyle-suppressions.xml" />
+    </module>
+    <module name="LineLength">
+        <property name="max" value="150" />
+    </module>
+</module>
